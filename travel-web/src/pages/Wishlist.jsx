@@ -8,7 +8,7 @@ export default function Wishlist() {
   const [wishlist, setWishlist] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:7000/api/wishlist", {
+    fetch("https://travel-explore-backend.onrender.com/api/wishlist", {
       headers: { Authorization: `Bearer ${localStorage.getItem("token")}` },
     })
       .then(res => res.json())
@@ -16,7 +16,7 @@ export default function Wishlist() {
   }, []);
 
   const remove = async (id) => {
-    await fetch(`http://localhost:7000/api/wishlist/${id}`, {
+    await fetch(`https://travel-explore-backend.onrender.com/api/wishlist/${id}`, {
       method: "DELETE",
       headers: { Authorization: `Bearer ${localStorage.getItem("token")}` },
     });
@@ -24,7 +24,7 @@ export default function Wishlist() {
   };
 
   const addToCart = async (pkg) => {
-    await fetch("http://localhost:7000/api/cart", {
+    await fetch("https://travel-explore-backend.onrender.com/api/cart", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
