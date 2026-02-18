@@ -15,7 +15,7 @@ export default function FloatingAI() {
     setLoading(true);
 
     try {
-      const res = await fetch("http://localhost:7000/api/ai/travel", {
+      const res = await fetch("https://travel-explore-backend.onrender.com/api/ai/travel", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
