@@ -1,0 +1,212 @@
+.cart-page {
+  min-height: 100vh;
+  background-image: url("../Assets/travel-specialist-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.page-title {
+  text-align: center;
+  padding: 120px 0 30px;
+  font-size: 2.5rem;
+  font-weight: 800;
+  letter-spacing: 1px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.page-subtitle {
+  text-align: center;
+  margin: 10px 0 25px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-size: 1.8rem;
+  font-weight: 700;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.cart-container {
+  max-width: 1000px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+.cart-card,
+.wishlist-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 18px 24px;
+  margin-bottom: 12px;
+  background: rgb(245, 245, 245, 0.78);
+  border-radius: 16px;
+  transition: 0.2s ease-in-out;
+}
+
+.cart-card:hover,
+.wishlist-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+}
+
+.cart-card img,
+.wishlist-card img {
+  width: 200px;
+  height: 110px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.cart-info,
+.wishlist-info {
+  flex: 1;
+  padding-left: 20px;
+}
+
+.cart-info h3,
+.wishlist-info h3 {
+  margin: 0;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.cart-info p,
+.wishlist-info p {
+  margin: 5px 0;
+  font-size: 0.95rem;
+  color: #555;
+}
+
+.cart-actions,
+.wishlist-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.cart-actions button,
+.wishlist-actions button {
+  border: none;
+  padding: 8px 14px;
+  border-radius: 10px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.btn-wishlist {
+  margin-left: 80px;
+  background: #953137;
+}
+.btn-cart {
+  margin-left: 200px;
+  background: #793035;
+}
+
+.btn-buy {
+  background: #e6a248;
+}
+
+.btn-save {
+  background: #ab8c0f;
+}
+
+.btn-remove {
+  background: #4ab0f3;
+}
+.btn-move {
+  background: #027e51;
+  margin-left: 200px;
+}
+
+.cart-actions button:hover,
+.wishlist-actions button:hover {
+  opacity: 0.8;
+}
+
+@media (max-width: 992px) {
+
+  .cart-card,
+  .wishlist-card {
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .cart-card img,
+  .wishlist-card img {
+    width: 100%;
+    height: 180px;
+  }
+
+  .cart-info,
+  .wishlist-info {
+    padding-left: 0;
+    margin-top: 10px;
+  }
+
+  .cart-actions,
+  .wishlist-actions {
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 10px;
+  }
+
+  .cart-actions button,
+  .wishlist-actions button {
+    flex: 1 1 48%;
+  }
+
+  .btn-wishlist,
+  .btn-cart,
+  .btn-move {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 576px) {
+
+  .page-title {
+    font-size: 1.8rem;
+    padding: 110px 0 20px;
+  }
+
+  .page-subtitle {
+    font-size: 1.3rem;
+  }
+
+  .cart-container {
+    padding: 0 10px;
+  }
+
+  .cart-card,
+  .wishlist-card {
+    padding: 15px;
+    align-items: center;
+  }
+
+  .cart-actions,
+  .wishlist-actions {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .cart-actions button,
+  .wishlist-actions button {
+    width: 100%;
+  }
+
+  .btn-wishlist,
+  .btn-cart,
+  .btn-move {
+    margin-left: 0;
+  }
+
+  .cart-info{
+    padding-left: 0;
+    margin-top: 10px;
+    text-align: center;
+  }
+}

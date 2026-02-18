@@ -1,0 +1,138 @@
+*,
+::before,
+::after{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+html, body {
+    height: 100%;
+    width: 100%;
+}
+.image {
+    background-image: url('../Assets/travel-hd.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 200vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column; 
+}
+.image1 {
+    background-image: url('../Assets/travel-book.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 200vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column; 
+}
+
+h1, h2 {
+    text-align: center; 
+    margin: 0 auto;
+    padding: 10px 0;
+}
+
+.container-logsign {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    box-shadow: 8px 8px 24px 0px;
+    width: 500px;
+    background: rgba(255, 255, 255, 0.462);
+    margin: 20px auto;
+}
+
+.footer {
+    margin-top: auto;
+    width: 100%;
+}
+
+h1{
+    color: rgb(0, 0, 0);
+    padding-top: 2px;
+    padding-top: 10px;
+    font-size: 100px;
+    font-weight: 600;
+}
+h2{
+    color: rgb(0, 0, 0);
+    padding-top: 2px;
+    padding-top: 10px;
+    padding-bottom: 100px;
+    font-size: 40px;
+}
+.container-logsign label{
+    font-size: 25px;
+    font-weight: 500;
+    margin-right: 10px;
+}
+.container-logsign .text{
+    margin-bottom: 40px;
+    font-size: 40px;
+    font-weight: 500;
+}
+
+.container-logsign > form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.container-logsign div{
+    display: flex;
+    flex-direction: column;
+}
+.container-logsign input{
+    width: 100%;
+    font-size: 20px;
+    padding: 10px;
+    margin: 10px;
+    border: none;
+    outline: none;
+    background: transparent;
+    border-bottom: 1px solid black;
+}
+.container-logsign input::placeholder{
+    font-size: 10px;
+    font-style: italic;
+    color: rgba(0, 0, 0, 0.5); 
+}
+
+.LogSign {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.submit-container{
+    display:block;
+    gap: 30px;
+    margin: 60px auto;
+}
+.submit{
+    background-color: rgb(157, 0, 255);
+    padding: 10px;
+    margin: 20px;
+    border-radius: 8px;
+    font-size: 20px;
+    cursor: pointer;
+    border: 0;
+
+}
+
+.logout-button {
+    background-color: rgb(157, 0, 255);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .logout-button:hover {
+    background-color: rgb(123, 0, 200);
+  }
+  

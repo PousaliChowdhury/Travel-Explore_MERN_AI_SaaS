@@ -1,0 +1,265 @@
+.review {
+  padding: 40px 20px;
+  background: linear-gradient(
+    to right,
+    rgb(82, 173, 208),
+    rgb(69, 103, 194),
+    rgb(114, 75, 180),
+    rgb(159, 67, 180)
+  );
+}
+
+.headings {
+  color: white;
+  font-weight: 700;
+  margin-top: 50px;
+  padding: 20px;
+  font-size: 40px;
+  text-align: center;
+}
+.swiper-client-msg {
+  font-size: 1.1rem;   
+  line-height: 1.8;
+  padding: 2.4rem;
+}
+.swiper-client-msg {
+  margin-top: 1.5rem;
+  padding: 2rem;
+  background: whitesmoke;
+  border-radius: 1rem;
+  position: relative;
+  font-size: 1.1rem;   
+  line-height: 1.8;
+  padding: 2.4rem;
+}
+.swiper-client-msg::before{
+  content: "";
+  position:absolute;
+  bottom: -10rem;
+  left: 50%;
+  border: 5rem solid white;
+  border-color: transparent;
+  padding-bottom: 2rem;
+  margin-top: 50px;
+}
+.client-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.swiper-client-msg p::before,
+.swiper-client-msg p::after {
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  position: absolute;
+  font-size: 2rem;
+  color: rgb(214, 139, 224);
+}
+.swiper-client-msg p::before {
+  content: "\f10d";
+  top: 10px;
+  left: 10px;
+}
+.review-swiper .swiper-slide {
+  height: auto;
+  display: flex;
+  align-items: stretch;
+}
+.swiper-client-msg p::after {
+  content: "\f10e";
+  bottom: 10px;
+  right: 10px;
+}
+.client-info img {
+  max-width: 100px;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+.swiper-client-data{
+  align-items: center;
+  margin-top: 3.2rem;
+  gap: 3.2rem;
+  grid-column: 2;
+}
+.name {
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin-top: 0.5rem;
+}
+
+.rate {
+  color: rgba(234, 207, 5, 0.94);
+  margin-top: 0.5rem;
+  font-size: 1.2rem;
+}
+.job {
+  font-size: 1.1rem;
+  opacity: 0.8;
+}
+.items {
+  background: #fff;
+  border-radius: 2rem;
+  width: 100%;
+  max-width: 1100px;     
+  margin: 0 auto 3rem;
+  padding: 2.5rem;     
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.share{
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  font-weight: 900;
+  font-size: larger;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  border: 0.1rem solid black;
+    input{
+      background-color: transparent;
+      border: none;
+      text-align: center;
+      color: black;
+      width: 100%;
+    &::placeholder{
+        color: black;
+      }
+    &:focus{
+        outline: none;
+      }
+   
+    }
+  }
+.icon{
+  color: #fbf5b5;
+  margin-right: 2rem;
+  margin-bottom: 1rem;
+}
+.btn{
+  color: black;
+  border: none;
+ 
+}
+@media (max-width: 768px) {
+  .headings {
+    font-size: 32px;
+  }
+
+  .items {
+    max-width: 90%;
+    padding: 1.8rem;
+  }
+
+  .swiper-client-msg {
+    font-size: 0.95rem;
+    padding: 1.6rem;
+  }
+}
+
+@media (min-width:580px) and (max-width:770px) {
+  .items {
+    font-size: 22px;
+  }
+  .swiper-client-msg{
+    padding-bottom: 15rem;
+    height: 400px;
+  }
+}
+@media (min-width:480px) and (max-width:579px) {
+  .items {
+    font-size: 50px;
+    width: 65%;
+    height: 1050px;
+  }
+  .name{
+    font-size: 60px;
+  }
+  .client-info img{
+    max-width: 20rem;
+  }
+  .headings{
+    padding: 30px;
+    font-size: 60px;
+  }
+  .swiper{
+    width: 65%;
+  }
+  .swiper-client-msg{
+    padding-bottom: 20rem;
+    height: 400px;
+  }
+}
+@media (max-width: 480px) {
+  .headings {
+    font-size: 26px;
+  }
+
+  .items {
+    max-width: 95%;
+    padding: 1.5rem;
+  }
+
+  .client-info img {
+    max-width: 80px;
+  }
+
+  .name {
+    font-size: 1.2rem;
+  }
+
+  .job {
+    font-size: 0.9rem;
+  }
+
+  .swiper-client-msg {
+    font-size: 0.9rem;
+    padding: 1.4rem;
+    height: auto;            
+  }
+  .swiper-client-msg p::before {
+    top: 8px;
+    left: 8px;
+    font-size: 1.6rem;
+  }
+
+  .swiper-client-msg p::after {
+    bottom: 8px;
+    right: 8px;
+    font-size: 1.6rem;
+  }
+}
+
+@media screen and (max-width:269px) {
+  .items {
+    font-size: 30px;
+    width: 25%;
+    height: 1800px;
+    padding: 5rem;
+  }
+  .name{
+    font-size: 50px;
+  }
+  .headings{
+    padding: 30px;
+    font-size: 50px;
+  }
+  .rate{
+    font-size: large;
+    display: flex;
+    flex-direction: row;
+  }
+  .client-info img{
+    max-width: 20rem;
+  }
+  .swiper{
+    width: 25%;
+  }
+  .swiper-client-msg{
+    height: 500px;
+  }
+}
