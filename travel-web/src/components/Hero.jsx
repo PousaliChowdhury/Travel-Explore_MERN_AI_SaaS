@@ -1,6 +1,5 @@
-import React, {useEffect} from 'react'
+import {useEffect} from 'react'
 import './Hero.css';
-import video from '../Assets/video.mp4'
 import Aos from 'aos'
 import 'aos/dist/aos.css'
 import { Link } from 'react-router-dom'
@@ -16,7 +15,7 @@ function Hero (){
 
     return(
         <div className='hero'>
-          <video src={video} autoPlay loop muted type='video/mp4' />
+          <video src="https://www.pexels.com/download/video/2075385/" autoPlay loop muted type='video/mp4' />
 
 
           <div className="hero-text">
