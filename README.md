@@ -1,1 +1,1 @@
-# Travel-Explore_MERN_AI_SaaS
+# Travel & Explore_MERN_AI_SaaS
