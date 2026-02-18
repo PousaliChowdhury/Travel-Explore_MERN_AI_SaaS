@@ -10,7 +10,7 @@ export default function Cart() {
   const navigate = useNavigate();
 
   const fetchData = async () => {
-    const res = await fetch("http://localhost:7000/api/me", {
+    const res = await fetch("https://travel-explore-backend.onrender.com/api/me", {
       headers: {
         Authorization: `Bearer ${localStorage.getItem("token")}`,
       },
@@ -22,7 +22,7 @@ export default function Cart() {
   };
   
   const addToWishlist = async (pkg) => {
-    await fetch("http://localhost:7000/api/wishlist", {
+    await fetch("https://travel-explore-backend.onrender.com/api/wishlist", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -38,7 +38,7 @@ export default function Cart() {
   }, []);
 
   const remove = async (id) => {
-    await fetch(`http://localhost:7000/api/cart/${id}`, {
+    await fetch(`https://travel-explore-backend.onrender.com/api/cart/${id}`, {
       method: "DELETE",
       headers: {
         Authorization: `Bearer ${localStorage.getItem("token")}`,
@@ -49,7 +49,7 @@ export default function Cart() {
   };
 
   const saveForLater = async (id) => {
-    await fetch(`http://localhost:7000/api/cart/save/${id}`, {
+    await fetch(`https://travel-explore-backend.onrender.com/api/cart/save/${id}`, {
       method: "PUT",
       headers: {
         Authorization: `Bearer ${localStorage.getItem("token")}`,
@@ -60,7 +60,7 @@ export default function Cart() {
   };
 
   const moveToCart = async (id) => {
-    await fetch(`http://localhost:7000/api/cart/move/${id}`, {
+    await fetch(`https://travel-explore-backend.onrender.com/api/cart/move/${id}`, {
       method: "PUT",
       headers: {
         Authorization: `Bearer ${localStorage.getItem("token")}`,
