@@ -10,11 +10,11 @@ export default function Booking() {
   const [persons, setPersons] = useState(1);
 
   useEffect(() => {
-    fetch(`http://localhost:7000/api/packages/${id}`)
+    fetch(`https://travel-explore-backend.onrender.com/api/packages/${id}`)
       .then(res => res.json())
       .then(setPkg);
 
-    fetch("http://localhost:7000/api/profile", {
+    fetch("https://travel-explore-backend.onrender.com/api/profile", {
       headers: {
         Authorization: `Bearer ${localStorage.getItem("token")}`,
       },
