@@ -10,7 +10,9 @@ app.use(express.json());
 
 connectDB();
 
-
+app.get("/", (req, res) => {
+  res.send("Welcome to the AI SaaS Backend!");
+});
 
 app.use("/api", userRoutes);
 app.use("/api/auth", require("./routes/auth.routes"));
