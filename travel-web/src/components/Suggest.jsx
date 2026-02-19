@@ -35,4 +35,4 @@ const Suggest = () => {
 
   )
 }
-export default Suggest
+export default Suggest;
