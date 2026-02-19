@@ -10,7 +10,10 @@ app.use(express.json());
 
 connectDB();
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 103fe74c906e4974ad8a17b309671e9f6a940f02
 app.get("/", (req, res) => {
   res.send("Welcome to the AI SaaS Backend!");
 });

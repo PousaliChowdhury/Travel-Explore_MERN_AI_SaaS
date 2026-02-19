@@ -11,7 +11,7 @@ const Source = () => {
   const [filteredPackages, setFilteredPackages] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:7000/api/packages")
+    fetch("https://travel-explore-backend.onrender.com/api/packages")
       .then(res => res.json())
       .then(data => {
         setPackages(data);
@@ -33,7 +33,7 @@ const Source = () => {
     const token = localStorage.getItem("token");
     if (!token) return alert("Login first");
 
-    const res = await fetch("http://localhost:7000/api/cart", {
+    const res = await fetch("https://travel-explore-backend.onrender.com/api/cart", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -50,7 +50,7 @@ const Source = () => {
     const token = localStorage.getItem("token");
     if (!token) return alert("Login first");
 
-    const res = await fetch("http://localhost:7000/api/wishlist", {
+    const res = await fetch("https://travel-explore-backend.onrender.com/api/wishlist", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
