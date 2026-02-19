@@ -4,7 +4,6 @@ import { Link } from 'react-router-dom'
 import bestprice from '../Assets/bestprice.png'
 import travel from '../Assets/travel.png'
 import insurance from '../Assets/insurance.png'
-import video1 from '../Assets/video1.mp4'
 import Aos from 'aos'
 import 'aos/dist/aos.css'
 
@@ -82,7 +81,7 @@ const Feature = () => {
 
 
                 <div data-aos="fade-left" data-aos-duration="2000" className='cardVideo'>
-                    <video src={video1} autoPlay loop muted />
+                    <video src="https://www.pexels.com/download/video/16296844/" autoPlay loop muted />
                 </div>
             </div>
             </div> </Link>
